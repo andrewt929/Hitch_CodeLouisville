@@ -209,14 +209,14 @@ div.hero_video video {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #images {
   /* Prevent vertical gaps */
-  line-height: 0;
+  line-height: 1;
   
   -webkit-column-count: 5;
-  -webkit-column-gap:   0px;
+  -webkit-column-gap:   0.5em;
   -moz-column-count:    5;
   -moz-column-gap:      0px;
   column-count:         5;
-  column-gap:           0px;  
+  column-gap:           0.5em;  
 }
 
 #images a {
