@@ -8,8 +8,9 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 	/* Load Hero Video */
-	$(window).bind("load", function() {  
-		$('#movie-area').load('http://www.hitch.click/movie.html');
+	$(window).bind("load", function() {
+		$('#movie-area').load('movie.html')
+		// $('#movie-area').load('http://www.hitch.click/movie.html');
 	});
 
 
