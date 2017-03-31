@@ -21,7 +21,7 @@
   opacity: 0.95;
 }
 .nav-bar .nav-bar-logo {
-  padding: 1.8rem;
+  padding: 1rem;
 }
 .nav-bar li {
   background: #2c3840;
@@ -70,6 +70,7 @@
 @media screen and (max-width: 39.9375em) {
   .nav-bar .offcanvas-trigger {
     padding: 0.9rem;
+    margin-right: 0.5em;
   }
 }
 
@@ -175,10 +176,6 @@ div.hero_video video {
   z-index: 1;
 }
 
-#wrapper {
-  width: 100%;
-}
-
 #search-bar {
   display: block;
   width: 100%;
@@ -195,14 +192,14 @@ div.hero_video video {
 
 #search-button{
   margin: 0;
-  padding: 0.85em 2em 0.85em 1.75em;
+  /*padding: 0.85em 2em 0.85em 1.75em;*/
   border: none;
   font-size: 0.93em;
   max-width: 22%;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
   float: left;
-  text-align: right;
+  text-align: center;
 }
 
 /* Destination Gallery modded from: https://css-tricks.com/seamless-responsive-photo-grid/
@@ -211,6 +208,7 @@ div.hero_video video {
   /* Prevent vertical gaps */
   line-height: 1;
   
+  position: relative;
   -webkit-column-count: 5;
   -webkit-column-gap:   0.5em;
   -moz-column-count:    5;
@@ -268,31 +266,44 @@ div.hero_video video {
   column-count:         2;
   }
 }
-@media (max-width: 640px) { 
-#search-bar {
-  display: block;
-  width: 100%;
-  overflow: visible;
-  float: left;
-}
-#search-field {
-  max-width: 39%;
-  float: left;
-  font-size: 0.93em;
-  color:lightgrey;
-}
+@media (max-width: 639px) {
+  /* Search Bar */
+  #brand {
+    float: right;
+    margin: 0;
+    display: block;
+    color: lightgrey;
+    font-size: 2em;
+    text-align: center;
+  }
 
-#search-button{
-  margin: 0;
-  padding: 0.85em 2em 0.85em 1.75em;
-  border: none;
-  font-size: 0.93em;
-  max-width: 22%;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
-  float: left;
-  text-align: right;
-}
+  #search-bar {
+    padding-top: 54px;
+    display: block;
+    overflow: visible;
+    float: left;
+  }
+
+  #search-field {
+    margin: 0;
+    display: block;
+    max-width: 40%;
+    float: left;
+    font-size: 0.93em;
+    color:lightgrey;
+    text-align: center;
+  }
+
+  #search-button {
+    padding: 0.85em 2em 0.85em 1.75em;
+    border: none;
+    border-radius: 0;
+    font-size: 0.93em;
+    max-width: 20%;
+    text-align: right;
+    float: left;
+    margin: 0;
+  }
 }
 @media (max-width: 400px) {
   #images {

@@ -46,6 +46,7 @@
     <div class="nav-bar">
         <div class="nav-bar-left">
           <a href="#" class="nav-bar-logo"><img width="50" class="logo" src="images/Hitch_button.png"></a>
+          <p id = "brand" class="show-for-small-only"><strong>Hitch</strong></p>
         </div>
         <div class="nav-bar-right">
           <ul class="menu">
@@ -70,10 +71,10 @@
     <body>
 
       <!-- Hero Section -->
-      <div class="body-info container">
-        <div id = "movie-area" class="hero_video hide-for-small-only"></div>
+      <div class="body-info container hide-for-small-only">
+        <div id = "movie-area" class="hero_video"></div>
         <div id = "overlay">
-          <img src = "images/Hitch_Transparency.png" class="hero_logo hide-for-small-only"></img>
+          <img src = "images/Hitch_Transparency.png" class="hero_logo"></img>
           <form id = "search-bar">
             <input id = "search-field" type="text" placeholder="Where?">
             <input id = "search-field" type="text" placeholder="When?">
@@ -81,6 +82,15 @@
           </form>
         </div>
       </div>
+
+        <!-- Search bar for small screens --> 
+        <div id = "overlay_small" class = "row show-for-small-only">
+          <form id = "search-bar">
+            <input id = "search-field" type="text" placeholder="Where?">
+            <input id = "search-field" type="text" placeholder="When?">
+            <a href="#" id = "search-button" class="button"><strong>GO!</strong></a>
+          </form>
+        </div>
 
       <!-- Lead In Text -->
       <div class="row hide-for-small-only large-12 columns">
