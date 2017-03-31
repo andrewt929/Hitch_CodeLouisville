@@ -1,0 +1,303 @@
+/* Navbar moddded from: http://codepen.io/lbeyers/pen/yMYpPb
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2c3840;
+  height: 57px;
+  font-family: "Titillium Web", sans-serif;
+  margin-bottom: 75px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  opacity: 0.95;
+}
+.nav-bar .nav-bar-logo {
+  padding: 1.8rem;
+}
+.nav-bar li {
+  background: #2c3840;
+}
+.nav-bar a {
+  color: #fff;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+.nav-bar a:hover {
+  color: #a8b8c3;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .nav-bar {
+    height: 53.57143px;
+  }
+}
+.nav-bar .offcanvas-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.6rem;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  background-color: #566d7c;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+.nav-bar .offcanvas-trigger .offcanvas-trigger-text {
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
+}
+.nav-bar .offcanvas-trigger:hover {
+  background-color: #6b879a;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .nav-bar .offcanvas-trigger {
+    padding: 0.9rem;
+  }
+}
+
+.off-canvas {
+  background: #222b31;
+  padding: 20px;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+}
+.off-canvas > .menu {
+  margin-bottom: 1rem;
+}
+.off-canvas .menu a {
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  -webkit-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+}
+.off-canvas .menu a:hover {
+  color: #fff;
+}
+.off-canvas .fa {
+  color: #fff;
+}
+.off-canvas .is-accordion-submenu-parent > a::after {
+  border-color: rgba(255, 255, 255, 0.6) transparent transparent;
+}
+.off-canvas .social-links {
+  margin-left: 20px;
+}
+.off-canvas .social-links li {
+  margin-right: 5px;
+}
+.off-canvas .social-links a:hover .fa {
+  color: #bfbfbf;
+  -webkit-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+}
+.off-canvas .social-links .fa {
+  font-size: 2.2rem;
+}
+
+.body-info {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  color: #2c3840;
+}
+.body-info .button {
+  margin: 1rem 0;
+  padding: 0.85em 2em;
+}
+
+.is-open + .off-canvas-content .hamburger .line:nth-child(1),
+.is-open + .off-canvas-content .hamburger .line:nth-child(3) {
+  width: 12px;
+}
+.is-open + .off-canvas-content .hamburger .line:nth-child(1) {
+  -webkit-transform: translateX(-5px) rotate(-45deg);
+          transform: translateX(-5px) rotate(-45deg);
+}
+.is-open + .off-canvas-content .hamburger .line:nth-child(3) {
+  -webkit-transform: translateX(-5px) rotate(45deg);
+          transform: translateX(-5px) rotate(45deg);
+}
+
+.hamburger .line {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  margin: 3px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger .line:last-child {
+  margin-bottom: 0;
+}
+
+/* Hero Video section modded from: http://stackoverflow.com/questions/10422105/add-text-above-html5-video
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container{
+  position:relative;
+}
+
+div.hero_video video {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin-top: -15%;
+  z-index: 0;
+}
+
+#overlay {
+  position: absolute;
+  top: 30%;
+  left: 36%;
+  max-width: 30%;
+  height: auto;
+  width: auto;
+  z-index: 1;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#search-bar {
+  display: block;
+  width: 100%;
+  overflow: visible;
+  float: left;
+}
+
+#search-field {
+  max-width: 39%;
+  float: left;
+  font-size: 0.93em;
+  color:lightgrey;
+}
+
+#search-button{
+  margin: 0;
+  padding: 0.85em 2em 0.85em 1.75em;
+  border: none;
+  font-size: 0.93em;
+  max-width: 22%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  float: left;
+  text-align: right;
+}
+
+/* Destination Gallery modded from: https://css-tricks.com/seamless-responsive-photo-grid/
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#images {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+}
+
+#images a {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  /* Destination Gallery */
+  #images {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  /* Search Bar */
+  #search-field {
+  max-width: 48%;
+  float: left;
+  margin: 1%;
+  font-size:0.8em;
+  }
+
+  #search-button{
+  margin: 3%;
+  border: none;
+  padding: 0.85em 4.25em 0.85em 2.5em;
+  font-size: 0.8em;
+  width: 100%;
+  border-radius: 5em;
+  text-align: center;
+  float: none;
+  }
+
+  /* Destination Gallery */
+  #images {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  /* Destination Gallery */
+  #images {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 640px) { 
+#search-bar {
+  display: block;
+  width: 100%;
+  overflow: visible;
+  float: left;
+}
+#search-field {
+  max-width: 39%;
+  float: left;
+  font-size: 0.93em;
+  color:lightgrey;
+}
+
+#search-button{
+  margin: 0;
+  padding: 0.85em 2em 0.85em 1.75em;
+  border: none;
+  font-size: 0.93em;
+  max-width: 22%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  float: left;
+  text-align: right;
+}
+}
+@media (max-width: 400px) {
+  #images {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
